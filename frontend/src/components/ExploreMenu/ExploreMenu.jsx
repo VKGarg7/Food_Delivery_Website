@@ -10,7 +10,9 @@ const ExploreMenu = ({ category, setCategory }) => {
         mission is to satisfy your cravings and elevate your dining experience,
         one delicious meal at a time.
       </p>
-      <div className="flex justify-between items-center gap-[30px] text-center my-5 overflow-x-scroll scrollbar-hide">
+      <div
+        className="flex justify-between items-center gap-[30px] text-center my-5 overflow-x-scroll [::-webkit-scrollbar]:hidden [scrollbar-width:none]"
+      >
         {menu_list.map((item, index) => {
           return (
             <div
