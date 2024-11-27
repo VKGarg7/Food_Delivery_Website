@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        brown: '#a52a2a', 
+        brown: '#a52a2a',
+        grayish: '#49557e', 
       },
       animation: {
         fadeIn: "fadeIn 3s ease-in-out",

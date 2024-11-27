@@ -59,41 +59,57 @@
 
 // export default Navbar;
 
-
-import React, { useState } from 'react';
-import { assets } from '../../assets/assets';
+import React, { useState } from "react";
+import { assets } from "../../assets/assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
 
   return (
     <div className="py-5 flex justify-between items-center">
-      <img src={assets.logo} alt="" className="w-[150px] md:w-[140px] sm:w-[120px]" />
+      <img
+        src={assets.logo}
+        alt=""
+        className="w-[150px] md:w-[140px] sm:w-[120px]"
+      />
       <ul className="hidden md:flex list-none gap-5 text-[#49557e] text-lg md:text-base sm:gap-4 sm:text-sm">
-        <li
+        <Link
+          to="/"
           onClick={() => setMenu("home")}
-          className={`${menu === "home" ? "border-b-2 border-brown" : ""} cursor-pointer`}
-        >
+          className={`${
+            menu === "home" ? "border-b-2 border-brown" : ""
+          } cursor-pointer`}
+        > 
           home
-        </li>
-        <li
+        </Link>
+        <a
+          href="#explore-menu"
           onClick={() => setMenu("menu")}
-          className={`${menu === "menu" ? "border-b-2 border-brown" : ""} cursor-pointer`}
+          className={`${
+            menu === "menu" ? "border-b-2 border-brown" : ""
+          } cursor-pointer`}
         >
           menu
-        </li>
-        <li
+        </a>
+        <a
+          href="#app-download"
           onClick={() => setMenu("about us")}
-          className={`${menu === "about us" ? "border-b-2 border-brown" : ""} cursor-pointer`}
+          className={`${
+            menu === "about us" ? "border-b-2 border-brown" : ""
+          } cursor-pointer`}
         >
           about us
-        </li>
-        <li
+        </a>
+        <a
+          href="#footer"
           onClick={() => setMenu("contact us")}
-          className={`${menu === "contact us" ? "border-b-2 border-brown" : ""} cursor-pointer`}
+          className={`${
+            menu === "contact us" ? "border-b-2 border-brown" : ""
+          } cursor-pointer`}
         >
           contact us
-        </li>
+        </a>
       </ul>
 
       <div className="flex items-center gap-10 md:gap-7 sm:gap-5">
