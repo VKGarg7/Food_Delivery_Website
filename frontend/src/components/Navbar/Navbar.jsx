@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
+  const { getTotalCartAmount } = useContext(StoreContext);
 
   return (
     <div className="py-5 flex justify-between items-center">
@@ -59,7 +61,11 @@ const Navbar = ({ setShowLogin }) => {
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" className="w-6 sm:w-5" />
           </Link>
-          <div className="absolute top-[-8px] right-[-8px] w-[10px] h-[10px] bg-brown rounded-full"></div>
+          <div
+            className={`absolute top-[-8px] right-[-8px] w-[10px] h-[10px] bg-brown rounded-full ${
+              getTotalCartAmount() === 0 ? "hidden" : ""
+            }`}
+          ></div>
         </div>
         <button
           onClick={() => setShowLogin(true)}
