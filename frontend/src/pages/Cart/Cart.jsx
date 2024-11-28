@@ -55,12 +55,12 @@ const Cart = () => {
             <hr className="h-[1px] bg-gray-200 border-none" />
             <div className="flex justify-between text-gray-600">
               <p>Delivery Fee</p>
-              <p>Rs. 2</p>
+              <p>Rs. {getTotalCartAmount()===0?0:2}</p>
             </div>
             <hr className="h-[1px] bg-gray-200 border-none" />
             <div className="flex justify-between font-semibold">
               <b>Total</b>
-              <b>Rs. {getTotalCartAmount() + 2}</b>
+              <b>Rs. {getTotalCartAmount()===0?0:getTotalCartAmount() + 2}</b>
             </div>
             <button
               onClick={() => navigate("/order")}
