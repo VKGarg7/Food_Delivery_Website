@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
 
-const Navbar = ({setShowLogin}) => {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
 
   return (
     <div className="py-5 flex justify-between items-center">
-      <img
-        src={assets.logo}
-        alt=""
-        className="w-[150px] md:w-[140px] sm:w-[120px]"
-      />
+      <Link to="/">
+        <img
+          src={assets.logo}
+          alt=""
+          className="w-[150px] md:w-[140px] sm:w-[120px]"
+        />
+      </Link>
       <ul className="hidden md:flex list-none gap-5 text-[#49557e] text-lg md:text-base sm:gap-4 sm:text-sm">
         <Link
           to="/"
@@ -54,7 +56,9 @@ const Navbar = ({setShowLogin}) => {
       <div className="flex items-center gap-10 md:gap-7 sm:gap-5">
         <img src={assets.search_icon} alt="" className="w-6 sm:w-5" />
         <div className="relative">
-          <img src={assets.basket_icon} alt="" className="w-6 sm:w-5" />
+          <Link to="/cart">
+            <img src={assets.basket_icon} alt="" className="w-6 sm:w-5" />
+          </Link>
           <div className="absolute top-[-8px] right-[-8px] w-[10px] h-[10px] bg-brown rounded-full"></div>
         </div>
         <button
