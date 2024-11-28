@@ -18,3 +18,5 @@ app.get("/",(req,res)=>{
 app.listen(port,()=>{
     console.log(`Server started at https://localhost:${port}`);
 })
+
+//mongodb+srv://VANSH:Vansh#147@cluster0.3anvn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
