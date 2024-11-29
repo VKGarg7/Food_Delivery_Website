@@ -57,10 +57,12 @@ const Navbar = ({ setShowLogin }) => {
 
       <div className="flex items-center gap-10 md:gap-7 sm:gap-5">
         <img src={assets.search_icon} alt="" className="w-6 sm:w-5" />
+
         <div className="relative">
           <Link to="/cart">
             <img src={assets.basket_icon} alt="" className="w-6 sm:w-5" />
           </Link>
+
           <div
             className={`absolute top-[-8px] right-[-8px] w-[10px] h-[10px] bg-brown rounded-full ${
               getTotalCartAmount() === 0 ? "hidden" : ""
@@ -79,3 +81,38 @@ const Navbar = ({ setShowLogin }) => {
 };
 
 export default Navbar;
+
+// .navbar-profile{
+//   position: relative;
+// }
+// .nav-profile-dropdown{
+//   position: absolute;
+//   display: none;
+//   right: 0;
+//   z-index: 1;
+// }
+// {!token ? (
+//   <button
+//     onClick={() => setShowLogin(true)}
+//     className="bg-transparent text-[#49557e] text-base md:text-sm border border-brown py-2 px-8 md:px-6 md:py-1.5 sm:py-1 sm:px-5 rounded-full transition duration-300 hover:bg-brown hover:text-white"
+//   >
+//     Sign In
+//   </button>
+// ) : (
+//   <div className="navbar-profile">
+//     <img src={assets.profile_icon} alt="" />
+//     <ul className="nav-profile-dropdown">
+//       <li>
+//         <img src={assets.bag_icon} alt="" />
+//         <p>Orders</p>
+//       </li>
+
+//       <hr />
+
+//       <li>
+//         <img src={assets.logout_icon} alt="" />
+//         <p>Logout</p>
+//       </li>
+//     </ul>
+//   </div>
+// )}
