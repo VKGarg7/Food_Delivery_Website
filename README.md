@@ -1,8 +1,20 @@
-# React + Vite
+# 🍔 **Food Delivery Website** 🍕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 **Overview**
+Welcome to the Food Delivery Website, an intuitive platform where users can browse, explore, and place orders from various restaurants. Built with **React** and **Vite**, this app ensures a seamless, user-friendly experience.
 
-Currently, two official plugins are available:
+## 🌟 **Key Features**
+- **User Authentication**: Easily sign in and manage your orders.
+- **Responsive Design**: Optimized for all devices—phones, tablets, and desktops.
+- **Restaurant Menu**: View food items, with detailed descriptions and images.
+- **Order Tracking**: Keep track of your order status in real time.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ **Technologies Used**
+- **Frontend**: React.js, Vite, CSS
+- **Backend**: (Add backend stack if used)
+- **Database**: (Add database stack if used)
+
+## 🔧 **Installation Steps**
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/VKGarg7/Food_Delivery_Website.git
