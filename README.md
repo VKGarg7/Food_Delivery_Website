@@ -1,7 +1,7 @@
 # 🍔 **Food Delivery Website** 🍕
 
 Welcome to the Food Delivery Website, an intuitive platform where users can browse, explore, and place orders from various restaurants. Built with **React** and **Vite**, this app ensures a seamless, user-friendly experience.
-<!-- [🚀 Live Demo](https://movietix-rho.vercel.app/)   |  -->
+[🚀 Live Demo](https://food-delivery-website-one-chi.vercel.app/)   | 
   [📂 GitHub Repo](https://github.com/VKGarg7/Food_Delivery_Website)
 
 ## 🌟 **Key Features**
